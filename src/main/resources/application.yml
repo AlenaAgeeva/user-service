@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: user-service
+  datasource:
+    url: jdbc:h2:mem:userdb;MODE=PostgreSQL;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+  cache:
+    type: simple
+
+server:
+  port: 8080
+
+logging:
+  level:
+    ru.ageeva.userservice: DEBUG
+    org.springframework.cache: INFO
