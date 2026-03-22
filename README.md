@@ -84,7 +84,7 @@ Liquibase автоматически создаёт таблицы при ста
 
 Или:
 
-## **mvn clean install
+## **mvn clean install**
 java -jar target/user-service.jar**
 
 📬 REST API (кратко)
