@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "usera")
+@Table(name = "users")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -23,6 +23,6 @@ public class UserEntity {
     @Column(name = "last_name", nullable = false)
     private String lastName;
 
-    @Column(name = "city", nullable = false)
-    private String city;
+    @Column(name = "passport", nullable = false, unique = true)
+    private String passport;
 }
