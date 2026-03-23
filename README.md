@@ -81,6 +81,8 @@ Liquibase автоматически создаёт таблицы при ста
 
 ## **http://localhost:8080/swagger-ui/index.html**
 
+![](screenshots/swagger.jpg)
+
 ▶️ Запуск приложения
 
 ## **mvn spring-boot:run**
@@ -89,8 +91,6 @@ Liquibase автоматически создаёт таблицы при ста
 
 ## **mvn clean install**
 ## *java -jar target/user-service.jar**
-
-![](screenshots/swagger.jpg)
 
 📬 REST API 
 
