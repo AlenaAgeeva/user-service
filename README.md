@@ -26,6 +26,7 @@
 | Документация API   | Springdoc OpenAPI / Swagger UI    |
 | Тестирование       | JUnit 5, Spring Boot Test, MockMvc|
 | Сборка             | Maven                             |
+| Логирование        | Slf4j                             |
 
 📂 Структура проекта
 ```
@@ -72,6 +73,8 @@ Liquibase автоматически создаёт таблицы при ста
 
 ## **http://localhost:8080/h2-console**
 
+![](screenshots/h2.jpg)
+
 📑 Swagger / OpenAPI
 
 После запуска сервиса документация доступна по адресу:
@@ -87,23 +90,47 @@ Liquibase автоматически создаёт таблицы при ста
 ## **mvn clean install**
 ## *java -jar target/user-service.jar**
 
-📬 REST API (кратко)
+![](screenshots/swagger.jpg)
+
+📬 REST API 
 
 Создать пользователя
 
 ## **POST /api/users**
 
-Получить список ID пользователей
-
-## **GET /api/users/ids**
+![](screenshots/swagger_1.jpg)
+![](screenshots/swagger_2.jpg)
 
 Получить пользователя по ID
 
 ## **GET /api/users/{id}**
 
+![](screenshots/swagger_4.jpg)
+
+Получить список пользователей
+
+## **GET /api/users/**
+
+![](screenshots/swagger_3.jpg)
+
+Изменить пользователя
+
+## **PUT /api/users/{id}**
+
+![](screenshots/swagger_5.jpg)
+![](screenshots/swagger_6.jpg)
+
 Удалить пользователя
 
 ## **DELETE /api/users/{id}**
+
+![](screenshots/swagger_7.jpg)
+
+Получить список ID пользователей
+
+## **GET /api/users/ids**
+
+![](screenshots/swagger_8.jpg)
 
 ⚠️ Обработка ошибок
 
