@@ -14,7 +14,7 @@ spring:
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: validate
-    show-sql: true
+    show-sql: false
   cache:
     type: simple
   liquibase:
@@ -23,5 +23,5 @@ server:
   port: 8080
 logging:
   level:
-    ru.ageeva.userservice: DEBUG
-    org.springframework.cache: INFO
+    ru.ageeva.userservice: ERROR
+    org.springframework.cache: ERROR
